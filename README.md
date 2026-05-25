@@ -18,12 +18,12 @@ pnpm add class-variance-authority clsx tailwind-merge lucide-solid solid-sonner 
 
 ### Manual Installation
 
-Copy and paste the specific components you need from this [repository](https://github.com/oscar370/adw-components-react-core).
+Copy and paste the specific components you need from this [repository](https://github.com/oscar370/adw-components-solid-core).
 
 ### Degit
 
 Degit is a tool that allows you to clone the components directly from the repository without downloading the Git history.
 
 ```bash
-npx degit oscar370/adw-components-react-core src
+npx degit oscar370/adw-components-solid-core src
 ```
