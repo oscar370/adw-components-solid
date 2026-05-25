@@ -1,0 +1,43 @@
+{
+  "name": "adw-components-solid",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-solid": "^8.6.0",
+    "lucide-solid": "^1.16.0",
+    "solid-js": "^1.9.12",
+    "solid-sonner": "^0.3.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^5.2.1",
+    "@storybook/addon-a11y": "^10.4.1",
+    "@storybook/addon-docs": "^10.4.1",
+    "@storybook/addon-vitest": "^10.4.1",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^24.12.3",
+    "@vitest/browser-playwright": "^4.1.7",
+    "@vitest/coverage-v8": "^4.1.7",
+    "playwright": "^1.60.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "storybook": "^10.4.1",
+    "storybook-dark-mode": "^5.0.0",
+    "storybook-solidjs-vite": "^10.1.0",
+    "tailwindcss": "^4.3.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vite-plugin-solid": "^2.11.12",
+    "vitest": "^4.1.7"
+  }
+}
