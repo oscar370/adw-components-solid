@@ -10,6 +10,7 @@ import {
 	SidebarProvider,
 	SidebarTrigger,
 } from "@/core/components/ui/sidebar";
+import { For } from "solid-js";
 import type { Meta, StoryObj } from "storybook-solidjs-vite";
 
 const meta = {
@@ -48,33 +49,37 @@ export const Default: Story = {
 				<SidebarHeader>Sidebar</SidebarHeader>
 				<SidebarContent>
 					<SidebarMenu>
-						{args.startItems.map((si: any) => (
-							<SidebarMenuItem>
-								<SidebarMenuButton
-									isActive={si.to === args.pathname}
-									as={"a"}
-									href={si.to}
-								>
-									{si.label}
-								</SidebarMenuButton>
-							</SidebarMenuItem>
-						))}
+						<For each={args.startItems}>
+							{(si: any) => (
+								<SidebarMenuItem>
+									<SidebarMenuButton
+										isActive={si.to === args.pathname}
+										as={"a"}
+										href={si.to}
+									>
+										{si.label}
+									</SidebarMenuButton>
+								</SidebarMenuItem>
+							)}
+						</For>
 					</SidebarMenu>
 
 					<Separator />
 
 					<SidebarMenu>
-						{args.componentsItems.map((si: any) => (
-							<SidebarMenuItem>
-								<SidebarMenuButton
-									isActive={si.to === args.pathname}
-									as={"a"}
-									href={si.to}
-								>
-									{si.label}
-								</SidebarMenuButton>
-							</SidebarMenuItem>
-						))}
+						<For each={args.componentsItems}>
+							{(si: any) => (
+								<SidebarMenuItem>
+									<SidebarMenuButton
+										isActive={si.to === args.pathname}
+										as={"a"}
+										href={si.to}
+									>
+										{si.label}
+									</SidebarMenuButton>
+								</SidebarMenuItem>
+							)}
+						</For>
 					</SidebarMenu>
 				</SidebarContent>
 			</Sidebar>

@@ -32,8 +32,8 @@ export const Default: Story = {
 	),
 };
 
-function DefaultContent({ message }: { message: string }) {
-	return <Button onClick={() => toast(message)}>Trigger toast</Button>;
+function DefaultContent(props: { message: string }) {
+	return <Button onClick={() => toast(props.message)}>Trigger toast</Button>;
 }
 
 export const Success: Story = {
@@ -48,8 +48,10 @@ export const Success: Story = {
 	),
 };
 
-function SuccessContent({ message }: { message: string }) {
-	return <Button onClick={() => toast.success(message)}>Trigger toast</Button>;
+function SuccessContent(props: { message: string }) {
+	return (
+		<Button onClick={() => toast.success(props.message)}>Trigger toast</Button>
+	);
 }
 
 export const Warning: Story = {
@@ -64,8 +66,10 @@ export const Warning: Story = {
 	),
 };
 
-function WarningContent({ message }: { message: string }) {
-	return <Button onClick={() => toast.warning(message)}>Trigger toast</Button>;
+function WarningContent(props: { message: string }) {
+	return (
+		<Button onClick={() => toast.warning(props.message)}>Trigger toast</Button>
+	);
 }
 
 export const Info: Story = {
@@ -80,8 +84,10 @@ export const Info: Story = {
 	),
 };
 
-function InfoContent({ message }: { message: string }) {
-	return <Button onClick={() => toast.info(message)}>Trigger toast</Button>;
+function InfoContent(props: { message: string }) {
+	return (
+		<Button onClick={() => toast.info(props.message)}>Trigger toast</Button>
+	);
 }
 
 export const Error: Story = {
@@ -96,8 +102,10 @@ export const Error: Story = {
 	),
 };
 
-function ErrorContent({ message }: { message: string }) {
-	return <Button onClick={() => toast.error(message)}>Trigger toast</Button>;
+function ErrorContent(props: { message: string }) {
+	return (
+		<Button onClick={() => toast.error(props.message)}>Trigger toast</Button>
+	);
 }
 
 export const Loading: Story = {
@@ -112,6 +120,8 @@ export const Loading: Story = {
 	),
 };
 
-function LoadingContent({ message }: { message: string }) {
-	return <Button onClick={() => toast.loading(message)}>Trigger toast</Button>;
+function LoadingContent(props: { message: string }) {
+	return (
+		<Button onClick={() => toast.loading(props.message)}>Trigger toast</Button>
+	);
 }
