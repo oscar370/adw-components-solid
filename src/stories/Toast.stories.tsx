@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "@/core/components/ui/button";
 import { Toaster } from "@/core/components/ui/toast";
-import type { Meta, StoryObj } from "storybook-solidjs-vite";
-
 import { toast } from "solid-sonner";
+import type { Meta, StoryObj } from "storybook-solidjs-vite";
 import CustomDocs from "./Toast.mdx";
 
 const meta = {
