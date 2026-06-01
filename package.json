@@ -14,7 +14,7 @@
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"embla-carousel-solid": "^8.6.0",
-		"lucide-solid": "^1.16.0",
+		"lucide-solid": "^1.17.0",
 		"solid-js": "^1.9.12",
 		"solid-sonner": "^0.3.1",
 		"tailwind-merge": "^3.6.0"
