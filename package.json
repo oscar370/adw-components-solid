@@ -39,7 +39,7 @@
 		"prettier-plugin-tailwindcss": "^0.8.0",
 		"storybook": "^10.4.1",
 		"storybook-dark-mode": "^5.0.0",
-		"storybook-solidjs-vite": "^10.1.0",
+		"storybook-solidjs-vite": "^10.1.1",
 		"tailwindcss": "^4.3.0",
 		"typescript": "~6.0.2",
 		"typescript-eslint": "^8.59.4",
